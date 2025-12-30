@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidence and Parsimony | The Anglo-Saxon Chronicle Multiple-Source Hypothesis</title>
+    <meta name="description" content="Comparative assessment of single-source vs. multiple-source theories for the Anglo-Saxon Chronicle Common Stock">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --parchment: #faf8f3;
+            --parchment-dark: #f0ebe3;
+            --ink: #2c2416;
+            --ink-light: #5a4e3d;
+            --burgundy: #8b2e2e;
+            --burgundy-light: #a85050;
+            --gold: #b8964f;
+            --border: #d9d0c1;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 19px;
+            line-height: 1.7;
+            color: var(--ink);
+            background: var(--parchment);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        nav {
+            background: var(--ink);
+            color: var(--parchment);
+            padding: 1.25rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        nav .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav .site-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        nav a {
+            color: var(--parchment);
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        
+        nav a:hover {
+            color: var(--gold);
+        }
+        
+        nav a.active {
+            color: var(--gold);
+            font-weight: 700;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-light) 100%);
+            color: var(--parchment);
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        main {
+            padding: 2rem 0 4rem;
+        }
+        
+        h2 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: var(--burgundy);
+            margin: 2.5rem 0 1rem;
+            line-height: 1.3;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--burgundy);
+            margin: 2rem 0 0.8rem;
+        }
+        
+        p {
+            margin-bottom: 1.3rem;
+        }
+        
+        em {
+            font-style: italic;
+        }
+        
+        strong {
+            font-weight: 700;
+            color: var(--ink);
+        }
+        
+        ul {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+        }
+        
+        a {
+            color: var(--burgundy);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        a:hover {
+            border-bottom-color: var(--burgundy);
+        }
+        
+        table {
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            background: var(--ink);
+            color: var(--parchment);
+            padding: 2rem 0;
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="site-title">The Anglo-Saxon Chronicle</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="framework.html">Framework</a></li>
+                <li><a href="thesis.html">Thesis</a></li>
+                <li><a href="assessment.html" class="active">Assessment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Evidence and Parsimony: A Comparative Assessment</h1>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+<h1>Evidence and Parsimony: A Comparative Assessment</h1>
+<h2>The Question of Simplicity</h2>
+<p>When scholars first encounter the multiple-source hypothesis, a natural reaction follows: "Five sources? That seems complicated. Plummer's single archetype is simpler. Occam's razor favors the simpler explanation."</p>
+<p>This objection deserves serious consideration. Parsimony matters in scholarship. We should not multiply entities unnecessarily.</p>
+<p>But simplicity has two dimensions: <strong>apparent simplicity</strong> (how a theory looks at first glance) and <strong>actual parsimony</strong> (how many auxiliary hypotheses the theory requires to explain all the evidence).</p>
+<p>Plummer's single-archetype theory appears simple. The question is: what does it actually require when we examine ALL the evidence—not just the vernacular Chronicle manuscripts, but also the Latin sources that share Chronicle-related material?</p>
+<h2>What Plummer Proved</h2>
+<p>Charles Plummer's achievement was monumental and remains valid. Through painstaking comparison of all Chronicle manuscripts, he demonstrated that the vernacular Chronicle texts all share extensive common material that derives from a common ancestor.</p>
+<strong>This finding is not in dispute.</strong> The question is not whether Plummer was right about manuscript relationships—the vernacular versions share a Common Stock source. The question is: <strong>what best explains the evidence from ALL sources—Old English manuscripts AND Latin witnesses?</strong>
+<h2>The Problems Requiring Explanation</h2>
+<p>When we extend our view beyond the vernacular manuscripts to include the Latin sources, patterns emerge that require explanation (proposed by Plummer and/or subsequent scholars working from his Æ hypothesis):</p>
+<h3>Æthelweard's <em>Chronicon</em> (late 10th century):</h3>
+<strong>Problem 1: The 885 Passage</strong>
+<ul>
+<li>All Chronicle manuscripts show evidence of homoeoteleuton (scribal eye-skip) in annal 885</li>
+<li>Æthelweard's text preserves a passage about the Fulham army that appears to have been lost from Æ (and thus all subsequent Chronicle manuscripts) through scribal error</li>
+<li>If Æthelweard and the Chronicle both derived from the same archetype (Æ), and that archetype had already suffered this scribal error, how does Æthelweard have the missing passage?</li>
+</ul>
+<strong>Problem 2: Unique Southwestern Material</strong>
+<ul>
+<li>Æthelweard includes southwestern geographical details not found in any Chronicle manuscript</li>
+<li>Frank Stenton (1925) observed this suggests "a version of the Chronicle different from any which is now extant"</li>
+<li>Where did this material come from?</li>
+</ul>
+<h3>The <em>Annals of St Neots</em> (12th century):</h3>
+<strong>Problem 3: Complete Absence of Southwestern Elements to Annal 851</strong>
+<ul>
+<li>St Neots shares Chronicle-related material from annal 455 onward</li>
+<li>Yet contains NO southwestern geographical elements whatsoever before 851</li>
+<li>Not selective absence—complete, systematic absence</li>
+<li>At 851, St Neots switches to using Asser's <em>Life of Alfred</em> as its source; southwestern elements then appear in St Neots because they are present in Asser's text, strongly suggesting such material was absent from St Neots' source for the pre-851 annals</li>
+</ul>
+<strong>Problem 4: Accurate Chronology</strong>
+<ul>
+<li>Chronicle manuscripts suffer a major chronological dislocation affecting annals 756-845</li>
+<li>Events are systematically misdated across this 90-year period</li>
+<li>St Neots gives accurate dates for this entire period</li>
+<li>At 851, the Chronicle chronology corrects—precisely where St Neots switches to Asser</li>
+</ul>
+<strong>Problem 5: Earlier Name Forms</strong>
+<ul>
+<li>St Neots preserves earlier Old English name forms: <em>Koenuualch</em> not <em>Cenwalh</em>, <em>Oisc</em> not <em>Æsc</em></li>
+<li>Suggests access to an earlier stage in textual transmission</li>
+</ul>
+<h3>Internal Chronicle Patterns:</h3>
+<strong>Problem 6: The 878 Lexical Break</strong>
+<ul>
+<li>Janet Bately (1978): <em>gefaran</em> for "die" exclusively in annals 789-878</li>
+<li><em>Forðferan</em> everywhere else in the Chronicle</li>
+<li>These terms never appear together in other Old English works</li>
+<li>The split is systematic, not random</li>
+</ul>
+<strong>Problem 7: Southwestern Geographic Clustering</strong>
+<ul>
+<li>Frank Stenton (1925): Southwestern geographical elements appear exclusively in 789-878</li>
+<li>None before this period, none after</li>
+<li>Precise clustering in the same period as the lexical break</li>
+</ul>
+<strong>Problem 8: Formulaic Features</strong>
+<ul>
+<li>R.H. Hodgkin (1939): Five distinctive formulaic phrases appear exclusively in 789-878</li>
+<li>"All of a piece," in Hodgkin's assessment</li>
+<li>Same period as the lexical and geographic patterns</li>
+</ul>
+<h2>Plummer's Single-Archetype Theory: What It Requires</h2>
+<p>To maintain that a single archetype (Æ), compiled in the early 890s, is the source for ALL Chronicle-related material in ALL sources, the following explanations are required:</p>
+<h3>Auxiliary Hypothesis 1: Lost Fuller Version of Æ</h3>
+<strong>For:</strong> Æthelweard's 885 passage
+<strong>Explanation:</strong> Æthelweard accessed an earlier, fuller version of Æ before the scribal error occurred
+<strong>Evidence:</strong> None direct (inferred from the problem)
+<strong>Status:</strong> Hypothetical lost manuscript
+<h3>Auxiliary Hypothesis 2: Lost Intermediate Copy</h3>
+<strong>For:</strong> Æthelweard's unique southwestern material
+<strong>Explanation:</strong> Æthelweard accessed a lost intermediate copy preserving material other copies lost
+<strong>Note:</strong> This could potentially be the same earlier manuscript as Hypothesis 1, containing both the 885 passage and southwestern material
+<strong>Evidence:</strong> None direct (inferred from the problem)
+<strong>Status:</strong> Hypothetical lost manuscript (possibly the same as Hypothesis 1)
+<h3>Auxiliary Hypothesis 3: St Neots' Systematic Omission</h3>
+<strong>For:</strong> Complete absence of southwestern elements
+<strong>Explanation:</strong> The St Neots compiler systematically omitted all southwestern geographical elements
+<strong>Problem:</strong> W.H. Stevenson acknowledged the compiler "adhered very closely to his MS," closely copying from his source texts word for word
+<strong>Problem:</strong> No systematic principle explains which material to omit—southwestern elements appear throughout the Chronicle
+<strong>Problem:</strong> Complete (100%) omission statistically implausible for random or selective deletion
+<strong>Status:</strong> Requires implausible systematic behavior
+<h3>Auxiliary Hypothesis 4: Lost Undislocated Version of Æ</h3>
+<strong>For:</strong> St Neots' accurate 756-845 chronology
+<strong>Explanation:</strong> St Neots accessed an earlier version of Æ free from chronological dislocation
+<strong>Problem:</strong> ALL surviving Chronicle manuscripts have the dislocation
+<strong>Problem:</strong> Must explain why dislocated version became universal but undislocated version disappeared
+<strong>Evidence:</strong> None direct (inferred from the problem)
+<strong>Status:</strong> Third hypothetical lost manuscript (this one undislocated)
+<h3>Auxiliary Hypothesis 5: Name Form Corruption</h3>
+<strong>For:</strong> St Neots' earlier name forms
+<strong>Explanation:</strong> Æ originally contained earlier Old English name forms (e.g., <em>Koenuualch</em>, <em>Oisc</em>); these forms later corrupted to the forms found in Chronicle manuscripts A-F (<em>Cenwalh</em>, <em>Æsc</em>); St Neots accessed Æ before this corruption occurred
+<strong>Evidence:</strong> Textual pattern showing St Neots preserves earlier forms
+<strong>Status:</strong> Plausible but adds complexity (requires Æ to have existed in uncorrupted form, then corrupted in a subsequent version to that which the St Neots compiler accessed)
+<h3>Auxiliary Hypothesis 6: Multiple Circulating Versions</h3>
+<strong>For:</strong> Explaining how different works accessed different "versions" of Æ
+<strong>Explanation:</strong> Various versions of Æ circulated with different features
+<strong>Problem:</strong> This is no longer a "single archetype" theory—it's a multi-version theory
+<strong>Status:</strong> Contradicts the simplicity premise
+<h3>For Problems 6-8 (The 878 Patterns - Convergent Evidence from Three Independent Scholars):</h3>
+<strong>Explanation:</strong> Not systematically addressed by single-archetype theory
+<strong>Status:</strong> Unexplained anomalies
+<strong>Total Auxiliary Hypotheses Required: Multiple</strong> (lost manuscripts with different features, implausible systematic omissions, unexplained patterns)
+<h2>The Multiple-Source Theory: What It Requires</h2>
+<h3>Hypothesis 1: Source P Existed</h3>
+<strong>For:</strong> The 878 patterns (three independent scholars using different methodologies all identified breaks at 878: lexical, geographic, formulaic) + Æthelweard's southwestern material
+<strong>Evidence:</strong>
+<ul>
+<li>Janet Bately (1978): Lexical analysis identifying <em>gefaran</em>/<em>forðferan</em> split at 878</li>
+<li>Frank Stenton (1925): Geographic analysis identifying southwestern clustering 789-878</li>
+<li>R.H. Hodgkin (1939): Formulaic analysis identifying distinctive features 789-878</li>
+<li><strong>Three independent scholars, three different methodologies, convergent conclusion</strong></li>
+<li>Æthelweard's unique southwestern material explained if he accessed P independently</li>
+<li>Historical plausibility: 878 Edington commemoration</li>
+</ul>
+<strong>Status:</strong> Convergent independent evidence from multiple scholars
+<h3>Hypothesis 2: Source Q Existed</h3>
+<strong>For:</strong> St Neots' systematic differences (no southwestern, accurate chronology, earlier forms)
+<strong>Evidence:</strong>
+<ul>
+<li>St Neots' complete absence of southwestern elements before 851 explained if source lacked them</li>
+<li>St Neots' accurate 756-845 chronology explained if source undislocated</li>
+<li>St Neots' earlier name forms explained if accessing earlier textual stage</li>
+<li>Stevenson's admission of compiler fidelity makes systematic omission implausible</li>
+<li>Systematic differences from P (vocabulary, scope, style) observable in Chronicle</li>
+<li>Historical plausibility: Alfred's educational program required general Anglo-Saxon history</li>
+</ul>
+<strong>Status:</strong> Systematic patterns in external witness, internal textual differences
+<h3>Hypothesis 3: Sources R, S, T (More Speculative)</h3>
+<strong>For:</strong> Specific remaining problems not fully explained by P and Q alone
+<strong>Evidence:</strong>
+<ul>
+<li><strong>R (879-892):</strong> Æthelweard's 885 passage (explaining the homoeoteleuton gap); focused Fulham army tracking suggests specialized compilation</li>
+<li><strong>S (851-890):</strong> September Indiction shift at 851; chronological correction at 851; manuscript relationships (BCDE agreement with Asser against A)</li>
+<li><strong>T (891-895):</strong> St Neots' simpler, better-structured version of 891-895 annals; shared readings with John of Worcester</li>
+</ul>
+<strong>Status:</strong> Less convergent evidence than P and Q, but each solves specific problems without requiring separate auxiliary hypotheses for each phenomenon
+<strong>Important note:</strong> While P and Q rest on convergent evidence from multiple independent scholars, R, S, and T are more inferential. However, they provide elegant solutions to problems that otherwise require multiple auxiliary hypotheses under the single-archetype model.
+<h3>Hypothesis 4: Originals Lost</h3>
+<strong>For:</strong> Why no manuscripts of P or Q survive
+<strong>Evidence:</strong>
+<ul>
+<li>The absence of manuscript evidence for P and Q is not grounds to assume they never existed</li>
+<li>Plummer's Æ also doesn't survive as a physical manuscript, yet scholars accept it existed based on derivative evidence</li>
+<li>Standard medieval manuscript transmission: originals frequently lost while copies survive</li>
+<li>Parallel cases where lost sources are accepted: Q source (Gospels), lost classical sources, lost chronicle sources</li>
+</ul>
+<strong>Status:</strong> Standard expectation for medieval texts; absence of evidence ≠ evidence of absence
+<strong>Total Auxiliary Hypotheses Required: Minimal</strong> (sources existed based on convergent evidence; originals lost per standard medieval pattern)
+<h2>Comparative Evidence Assessment</h2>
+
+<p>The following table systematically compares what each theory requires to explain all eight problems:</p>
+
+<table style="width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.95rem;">
+<thead>
+<tr style="background: var(--burgundy); color: var(--parchment);">
+<th style="padding: 0.75rem; text-align: left; border: 1px solid var(--border);">Problem to Explain</th>
+<th style="padding: 0.75rem; text-align: left; border: 1px solid var(--border);">Plummer's Theory Requires</th>
+<th style="padding: 0.75rem; text-align: left; border: 1px solid var(--border);">Multiple-Source Theory Requires</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background: var(--parchment-dark);">
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>Æthelweard's 885 passage</strong></td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);">Lost fuller version of Æ (before scribal error)</td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>R existed</strong> and circulated independently</td>
+</tr>
+<tr>
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>Æthelweard's SW material</strong></td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);">Lost intermediate copy with unique material</td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>P existed</strong> and Æthelweard accessed it</td>
+</tr>
+<tr style="background: var(--parchment-dark);">
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>St Neots: no SW elements pre-851</strong></td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);">Systematic omission (implausible given compiler's documented fidelity)</td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>Q existed</strong> without SW elements; St Neots used Q</td>
+</tr>
+<tr>
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>St Neots: accurate 756-845 dates</strong></td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);">Lost undislocated version of Æ</td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>Q existed</strong> undislocated; St Neots used Q</td>
+</tr>
+<tr style="background: var(--parchment-dark);">
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>St Neots: earlier name forms</strong></td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);">Name corruption in Æ after St Neots' access</td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>Q existed</strong> at earlier textual stage; St Neots used Q</td>
+</tr>
+<tr>
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>878 lexical break</strong> (Bately)</td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);">Unexplained anomaly</td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>P ended</strong> (789-878), <strong>Q material</strong> used elsewhere</td>
+</tr>
+<tr style="background: var(--parchment-dark);">
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>878 geographic break</strong> (Stenton)</td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);">Unexplained anomaly</td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>P ended</strong> (789-878), <strong>Q material</strong> used elsewhere</td>
+</tr>
+<tr>
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>878 formulaic break</strong> (Hodgkin)</td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);">Unexplained anomaly</td>
+<td style="padding: 0.75rem; border: 1px solid var(--border);"><strong>P ended</strong> (789-878), <strong>Q material</strong> used elsewhere</td>
+</tr>
+</tbody>
+</table>
+
+<div style="background: var(--parchment-dark); border: 2px solid var(--burgundy); padding: 1.5rem; margin: 2rem 0;">
+<h4 style="margin-top: 0; color: var(--burgundy);">Entity Count Summary</h4>
+<p><strong>Plummer's Theory (extended to Latin sources):</strong></p>
+<ul style="margin-bottom: 1.5rem;">
+<li>1 archetype (Æ)</li>
+<li>+ Lost fuller version of Æ (for 885 passage)</li>
+<li>+ Lost intermediate copy with SW material (possibly same as above, but still hypothetical)</li>
+<li>+ Lost undislocated version of Æ (for St Neots chronology)</li>
+<li>+ Implausible systematic omission behavior (for St Neots SW absence)</li>
+<li>+ Name corruption event (for St Neots earlier forms)</li>
+<li>+ 3 unexplained convergent anomalies (878 patterns from independent scholars)</li>
+</ul>
+<p><strong>= 1 base entity + 6+ auxiliary hypotheses = 7+ total entities to explain the evidence</strong></p>
+
+<p><strong>Multiple-Source Theory:</strong></p>
+<ul style="margin-bottom: 1rem;">
+<li>Source P (convergent evidence: Bately + Stenton + Hodgkin + Æthelweard)</li>
+<li>Source Q (systematic St Neots patterns + internal differences)</li>
+<li>Sources R, S, T (more speculative, solve specific problems)</li>
+<li>+ Originals lost (standard medieval manuscript pattern)</li>
+</ul>
+<p><strong>= 5 sources + 1 auxiliary hypothesis = 6 total entities to explain the evidence</strong></p>
+
+<p style="font-size: 1.1rem; font-weight: bold; color: var(--burgundy); margin-bottom: 0;"><strong>The multiple-source theory requires fewer total entities and explains more phenomena systematically.</strong></p>
+</div>
+
+
+
+
+
+
+
+
+<h2>The Meta-Parsimony Argument</h2>
+<p>When we examine the auxiliary hypotheses required by each theory:</p>
+<strong>Plummer's "Simple" Single-Archetype Theory:</strong>
+<ul>
+<li>Lost earlier version of Æ (for Æthelweard's 885 passage and possibly his southwestern material—could be one manuscript or two)</li>
+<li>Systematic omission by St Neots (for missing southwestern elements—implausible given Stevenson's observation)</li>
+<li>Lost undislocated version of Æ (for St Neots' accurate chronology)</li>
+<li>Name form corruption (Æ had earlier forms, which corrupted after St Neots' access)</li>
+<li>Multiple circulating versions (to explain variations)</li>
+<li>878 patterns unexplained (three independent scholars' convergent findings)</li>
+</ul>
+<strong>= Multiple auxiliary hypotheses + unexplained anomalies = 7+ total entities</strong>
+<strong>Multiple-Source Theory:</strong>
+<ul>
+<li>P existed (convergent evidence from three independent scholars)</li>
+<li>Q existed (systematic patterns in St Neots)</li>
+<li>R, S, T existed (more speculative, solve specific problems)</li>
+<li>Originals lost (standard medieval pattern)</li>
+</ul>
+<strong>= Minimal auxiliary hypotheses = 6 total entities</strong>
+<strong>At the meta-level, the multiple-source theory is more parsimonious.</strong>
+<p>The appearance of simplicity (one archetype) masks the actual complexity required (multiple auxiliary hypotheses). The appearance of complexity (five sources—P, Q, R, S, T) masks the actual parsimony (one framework explaining multiple phenomena with minimal auxiliary hypotheses).</p>
+<strong>In science, a theory that explains more phenomena with fewer auxiliary hypotheses is preferred—even if the theory itself seems initially more complex.</strong>
+<h2>What "Parsimony" Really Means</h2>
+<p>Occam's razor does not mean "prefer the theory that sounds simpler."</p>
+<p>It means: <strong>do not multiply entities beyond necessity.</strong></p>
+<strong>Question:</strong> Which multiplies entities more?
+<strong>Plummer's theory when applied to the evidence of the Latin works:</strong> One archetype + 6+ auxiliary hypotheses (lost manuscripts with varying features, implausible systematic omissions, unexplained patterns) = 7+ total entities
+<strong>Multiple-source theory:</strong> Five sources + minimal auxiliary hypotheses (originals lost per standard medieval pattern) = 6 total entities
+<strong>The multiple-source theory actually multiplies fewer entities when we account for what each theory requires to explain all the evidence.</strong>
+<p>The crucial insight: <strong>one framework that explains multiple phenomena is more parsimonious than multiple separate explanations for each phenomenon.</strong></p>
+<h2>What We're Not Claiming</h2>
+<p>This comparative assessment is not claiming:</p>
+<ul>
+<li>That Plummer's theory about the Common Stock is incorrect (the theory is correct—the Common Stock theory has been proven for the vernacular versions of the Chronicle)</li>
+<li>That the multiple-source theory is proven beyond doubt (it remains a hypothesis requiring testing)</li>
+</ul>
+<strong>Important note:</strong> Plummer's hypothetical Æ does not survive as a physical manuscript—yet scholars accept it existed based on derivative evidence in later manuscripts. This same principle of accepting lost sources based on derivative evidence actually supports the multiple-source hypothesis.
+<h2>What We Are Claiming</h2>
+<p>When we examine ALL the evidence—vernacular manuscripts AND Latin sources—the multiple-source theory:</p>
+<p>1. <strong>Explains more phenomena</strong> with the same or fewer auxiliary hypotheses</p>
+<p>2. <strong>Accounts for convergent independent scholarly findings</strong> (Bately + Stenton + Hodgkin)</p>
+<p>3. <strong>Provides systematic explanations</strong> for external witness variations (Æthelweard, St Neots)</p>
+<p>4. <strong>Resolves internal anomalies</strong> (878 patterns, 851 shifts) within one framework</p>
+<p>5. <strong>Follows standard medieval patterns</strong> (multiple texts produced, circulated, compiled, originals lost)</p>
+<strong>The multiple-source theory is not simpler in appearance, but it is more parsimonious in explanatory structure.</strong>
+<h2>An Invitation</h2>
+<p>This comparative assessment invites evaluation based on <strong>explanatory power</strong>, not <strong>initial appearance</strong>.</p>
+<p>The question is not: "Which theory sounds simpler?"</p>
+<p>The question is: "Which theory better explains the full range of evidence with fewer auxiliary hypotheses?"</p>
+<p>We invite scholars to engage with this question based on the evidence presented—in the Framework, in the thesis, and in the comparative assessment above.</p>
+<p>Plummer's identification of the Common Stock was correct and foundational. The question now is: was that Common Stock a unified creation of the early 890s, or a compilation of earlier sources woven together perhaps in Edward the Elder's reign?</p>
+<p>The evidence, when examined comprehensively, increasingly supports the latter.</p>
+<strong><a href="framework.html">← Return to Framework</a></strong> | <strong><a href="thesis.html">Read the Full Thesis →</a></strong> | <strong><a href="index.html">← Return to Home</a></strong>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>The Anglo-Saxon Chronicle: Multiple-Source Hypothesis | John Quanrud, PhD</p>
+        </div>
+    </footer>
+</body>
+</html>

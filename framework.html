@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework | The Anglo-Saxon Chronicle Multiple-Source Hypothesis</title>
+    <meta name="description" content="Detailed evidence for five antecedent sources behind the Anglo-Saxon Chronicle Common Stock">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --parchment: #faf8f3;
+            --parchment-dark: #f0ebe3;
+            --ink: #2c2416;
+            --ink-light: #5a4e3d;
+            --burgundy: #8b2e2e;
+            --burgundy-light: #a85050;
+            --gold: #b8964f;
+            --border: #d9d0c1;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 19px;
+            line-height: 1.7;
+            color: var(--ink);
+            background: var(--parchment);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        nav {
+            background: var(--ink);
+            color: var(--parchment);
+            padding: 1.25rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        nav .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav .site-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: var(--parchment);
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        
+        nav a:hover {
+            color: var(--gold);
+        }
+        
+        nav a.active {
+            color: var(--gold);
+            font-weight: 700;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-light) 100%);
+            color: var(--parchment);
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        main {
+            padding: 2rem 0 4rem;
+        }
+        
+        h2 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: var(--burgundy);
+            margin: 2.5rem 0 1rem;
+            line-height: 1.3;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--burgundy);
+            margin: 2rem 0 0.8rem;
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin: 1.5rem 0 0.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.3rem;
+        }
+        
+        em {
+            font-style: italic;
+        }
+        
+        strong {
+            font-weight: 700;
+            color: var(--ink);
+        }
+        
+        ul, ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+        }
+        
+        blockquote {
+            background: var(--parchment-dark);
+            border-left: 4px solid var(--burgundy);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+        }
+        
+        a {
+            color: var(--burgundy);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        a:hover {
+            border-bottom-color: var(--burgundy);
+        }
+        
+        .example-box {
+            background: var(--parchment-dark);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .example-box p {
+            margin-bottom: 0.8rem;
+        }
+        
+        footer {
+            background: var(--ink);
+            color: var(--parchment);
+            padding: 2rem 0;
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                gap: 1.5rem;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="site-title">The Anglo-Saxon Chronicle</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="framework.html" class="active">Framework</a></li>
+                <li><a href="thesis.html">Thesis</a></li>
+                <li><a href="assessment.html">Assessment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>The Framework: Antecedent Sources Used to Produce Æ</h1>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+<h1>The Framework: Antecedent Sources Used to Produce Æ</h1>
+
+<div class="example-box" style="background: linear-gradient(to right, var(--parchment-dark), var(--parchment)); border: 2px solid var(--burgundy); margin: 2rem 0;">
+<h4 style="text-align: center; color: var(--burgundy); margin-top: 0;">Timeline of Hypothesized Sources</h4>
+<p style="text-align: center; font-size: 0.95rem; line-height: 2;">
+<strong>Source P</strong> (c. 878) → <strong>Source Q</strong> (880s-early 890s) → <strong>Source R</strong> (c. 892) → <strong>Source S</strong> (c. 893) → <strong>Source T</strong> (c. 895) → <strong>Common Stock (Æ)</strong> (c. 900-902)
+</p>
+<p style="text-align: center; font-size: 0.9rem; font-style: italic; margin-bottom: 0;">
+P and Q have strong convergent evidence | R, S, T are more speculative but solve specific problems | Dating to c. 900-902 suggests Edwardian rather than Alfredian compilation
+</p>
+</div>
+
+<h2>I. Foundation: Two Puzzles</h2>
+<h3>Puzzle 1: The 878 Break</h3>
+<p>In 1978, Janet Bately published a groundbreaking lexical analysis revealing an unexpected pattern: the Chronicle appears to show a compositional break at annal 878.</p>
+<p>Through systematic analysis of vocabulary, Bately identified that the Chronicle uses two different Old English terms for "die"—terms that never appear together in any other Old English work. Yet the Chronicle contains both. The vocabulary shifts at precisely 878—the year of Alfred's decisive victory at Edington, the turning point from crisis to triumph.</p>
+<p>The split is too systematic to be accidental. It suggests different authorship.</p>
+<h3>Puzzle 2: The 851 Problem</h3>
+<p>The Anglo-Saxon Chronicle contains a major chronological error affecting annals over a 90-year period (756-845). Events are systematically misdated by varying amounts across this period.</p>
+<strong>The scope of the problem:</strong>
+<ul>
+<li>Affects annals over a 90-year period</li>
+<li>Present in ALL Chronicle manuscripts derived from the Common Stock</li>
+<li>Scholars have recognized this dislocation for over a century</li>
+<li>Plummer used it as key evidence for his hypothesis of a lost archetype Æ</li>
+</ul>
+<strong>What happens at 851:</strong>
+<p>The chronology suddenly corrects itself. From 851 onward, dates are accurate.</p>
+<strong>The calendar shift:</strong>
+<p>At precisely the same point—annal 851—the Chronicle shifts abruptly from December/January reckoning to a September Indiction that had long since disappeared from Anglo-Saxon usage. Such a shift suggests a compositional seam—the point where different source materials were joined.</p>
+<strong>The puzzle:</strong>
+<ul>
+<li>Why does the dislocation occur at all?</li>
+<li>Why does it correct at precisely 851?</li>
+<li>Why does the calendar system change at exactly this point?</li>
+<li>Janet Bately observed: there's no obvious reason for correction at 851 unless unaffected material was joined to the preceding section</li>
+</ul>
+<strong>The <em>Annals of St Neots</em> is completely free from this dislocation:</strong>
+<p>The <em>Annals of St Neots</em> is a 12th-century Latin text that shares Chronicle-related material. Unlike all Chronicle manuscripts, it gives accurate dates for 756-845. This is one major reason scholars concluded St Neots accessed an earlier, more accurate version of hypothetical Æ than the Chronicle manuscripts used.</p>
+<p>Both the 851 problem and St Neots' freedom from it may become crucial to understanding how the Chronicle was compiled.</p>
+<h3>The Question</h3>
+<p>What if these aren't isolated anomalies?</p>
+<p>What if Bately's 878 lexical break isn't random variation but a compositional seam—the point where one source text ends and another begins?</p>
+<p>What if the 851 chronological correction marks another seam—where unaffected material was joined to dislocated material?</p>
+<p>What if the Chronicle we have was compiled from multiple earlier sources, each circulating independently, each with its own character and purpose?</p>
+<p>This question opens a new approach to understanding the Chronicle's origins—one grounded in patterns that multiple scholars, working independently using different methodologies, have already identified. These patterns converge in remarkable ways, suggesting compositional seams where different sources were joined.</p>
+<p>Section I presented two puzzles: the vocabulary shift and geographical clustering at 878, and the calendar/chronological anomalies at 851. These puzzles point toward specific sources. We begin with the source for which the evidence is strongest.</p>
+<p>---</p>
+<h2>II. Source P (789-878)</h2>
+<h3>Bately's Discovery</h3>
+<p>In 1978, Janet Bately made a crucial observation through lexical analysis: the Chronicle uses two completely different Old English terms for "die"—<em>gefaran</em> and <em>forðferan</em>. These terms never appear together in any other Old English work.</p>
+<p>Her analysis revealed a systematic pattern: entries from 789-878 exclusively use <em>gefaran</em>. The rest of the Chronicle—before and after this period—uses <em>forðferan</em>.</p>
+<p>The split is too clean to be accidental. It suggests different authorship.</p>
+<h3>878: The Turning Point</h3>
+<p>878 was the most consequential year of Alfred's reign—the year everything changed:</p>
+<ul>
+<li><strong>January-May:</strong> Alfred in hiding at Athelney, his kingdom nearly lost</li>
+<li><strong>May:</strong> Battle of Edington—Alfred's decisive victory</li>
+<li><strong>After Edington:</strong> Peace of Wedmore—settlement securing Wessex</li>
+<li><strong>After Edington:</strong> Guthrum's baptism—religious and political transformation</li>
+</ul>
+<p>The year marks Alfred's transformation from fugitive to victor, from crisis to triumph.</p>
+<h3>The Question</h3>
+<p>What if Bately's 878 lexical break isn't random variation? What if it's a compositional seam—the point where one source text ends and another begins?</p>
+<p>What if the Chronicle entries for 789-878, with their distinctive <em>gefaran</em> vocabulary, derive from a separate compilation created to commemorate Alfred's victory at Edington?</p>
+<p>If this hypothesis is correct—if we designate this source as <strong>P</strong>—what would we expect to find?</p>
+<p>We would expect:</p>
+<ul>
+<li>Distinctive lexical features (Bately's <em>gefaran</em> vocabulary)</li>
+<li>Regional geographic focus (southwestern, if commemorating Edington)</li>
+<li>Formulaic consistency within this period</li>
+<li>Eyewitness narrative character</li>
+<li>Historical purpose (legitimation, commemoration)</li>
+<li>Evidence that this material circulated independently</li>
+</ul>
+<strong>Every one of these expectations is met.</strong>
+<h3>The Evidence Converges</h3>
+
+<p><strong>Lexical Evidence (Bately 1978):</strong> Janet Bately's 1978 lexical analysis revealed a striking pattern. The Chronicle uses <em>gefaran</em> for "die" exclusively in annals 789-878, while <em>forðferan</em> appears everywhere else—both before and after this period. This split is remarkable because these terms never appear together in any other Old English work. The division is too systematic, too clean to be accidental. It points unmistakably to different authorship.</p>
+
+<p><strong>Geographic Evidence (Stenton 1925):</strong> Frank Stenton's 1925 study identified a tight cluster of southwestern West Saxon geographical elements. Locations like Carhampton, Countisbury, Cynwit, Athelney, Wedmore, and Dorchester appear repeatedly. Somerset, Dorset, and Devon feature prominently in these annals. But here's what makes this significant: these southwestern elements appear exclusively in annals 789-878. After 878, they vanish completely. The geographical focus shifts precisely where the vocabulary shifts. Stenton himself dated these elements more broadly (750-891), but the actual evidence shows them clustering precisely in 789-878.</p>
+
+<p><strong>Formulaic Evidence (Hodgkin 1939):</strong> R.H. Hodgkin identified five distinctive phraseological features appearing in the Chronicle: <em>micel wæl geslægen</em> ("great slaughter made"), <em>micel wælsliht</em> ("great slaughter"), <em>gefægene wærun</em> ("were put to flight"), <em>geþuærnesse</em> ("harmony/agreement"), and <em>micle/lytle werode</em> ("with large/small force"). All five phrases appear exclusively in annals 789-878. None appear before or after. These entries, Hodgkin argued, were "all of a piece"—a unified composition with consistent stylistic features.</p>
+
+<p><strong>Narrative Character:</strong> Annals 789-878 differ qualitatively from what comes before and after. They're longer and more detailed, with an eyewitness quality marked by specific battle details and precise geography. Scholars have noted these entries draw on oral traditions and contemporary accounts, giving them an immediacy lacking in earlier annals. They focus consistently on Egbert's dynasty, Alfred's divine destiny, and the southwestern nobility's role in the kingdom's survival.</p>
+
+<p><strong>The convergence is remarkable.</strong> Four independent scholars, working with different methodologies over five decades, identified features that all cluster at precisely the same point: 789-878. The lexical shift, the geographical focus, the formulaic phrases, and the narrative character all converge. This is not coincidence. It's evidence of a distinct source.</p>
+<h3>Seeing the Difference: P-Type vs. Non-P Entries</h3>
+<strong>Example of a P-type entry (Annal 836):</strong>
+<p>Old English:</p>
+<blockquote><em>Her gefeaht Ecgbryht cyning wiþ .xxxv. sciphlæsta æt Carrum, 7 þær wearþ micel wæl geslægen, 7 þa Denescan ahton wælstowe gewald.</em></blockquote>
+<p>Translation:</p>
+<blockquote>"In this year King Egbert fought against the crews of 35 ships at Carhampton, and <strong>a great slaughter was made</strong> there, and the Danes had possession of the place of slaughter."</blockquote>
+<strong>P characteristics present:</strong>
+<ul>
+<li><strong>Carhampton</strong> = southwestern location (Somerset)</li>
+<li><strong><em>micel wæl geslægen</em></strong> = Hodgkin's distinctive formula</li>
+<li>Detailed battle narrative with specific numbers</li>
+<li>Eyewitness quality</li>
+</ul>
+<strong>Example of a non-P entry (Annal 832):</strong>
+<p>Old English:</p>
+<blockquote><em>Her Wulfred ærcebiscep forþferde.</em></blockquote>
+<p>Translation:</p>
+<blockquote>"In this year Archbishop Wulfred died [<em>forþferde</em>]."</blockquote>
+<strong>Non-P characteristics:</strong>
+<ul>
+<li><strong><em>forðferde</em></strong> (not <em>gefaran</em>) = different vocabulary</li>
+<li>Terse, formulaic</li>
+<li>Pan-Anglo-Saxon ecclesiastical matter</li>
+<li>No regional focus, no battle detail</li>
+</ul>
+<strong>Another P-type example showing multiple features (Annal 845):</strong>
+<p>Old English:</p>
+<blockquote><em>Her Eanulf aldorman gefeaht mid Sumursætum, 7 Ealchstan biscep 7 Osric aldorman mid Dornsætum gefuhton æt Pedridan muþan wiþ deniscne here 7 þær micel wæl geslogon 7 sige namon.</em></blockquote>
+<p>Translation:</p>
+<blockquote>"In this year Ealdorman Eanwulf fought with the men of Somerset, and Bishop Ealhstan and Ealdorman Osric with the men of Dorset fought against the Danish army at the mouth of the Parrett and there <strong>made a great slaughter</strong> and took the victory."</blockquote>
+<strong>P characteristics:</strong>
+<ul>
+<li><strong>Somerset, Dorset, Parrett</strong> = southwestern locations</li>
+<li><strong><em>micel wæl geslogon</em></strong> = Hodgkin's formula (variant of <em>micel wæl geslægen</em>)</li>
+<li>Named southwestern nobles (Eanwulf, Ealhstan, Osric)</li>
+<li>Detailed battle account</li>
+</ul>
+<h3>Evidence for Independent Circulation</h3>
+<p>If P circulated independently, we would expect other texts to show access to it outside the Chronicle framework.</p>
+<strong>Æthelweard's <em>Chronicon</em> (late 10th century) contains southwestern material not found in any Chronicle manuscript:</strong>
+<strong>Example 1 - Annal 789:</strong>
+<ul>
+<li>Chronicle: Three ships arrived; viking attack; reeve killed</li>
+<li>Æthelweard adds: The reeve's name was Beaduheard; he rode from Dorchester; he had companions with him</li>
+</ul>
+<strong>Example 2 - Multiple annals:</strong>
+<p>Stenton noted that Æthelweard includes southwestern elements in annals 787, 823, 867, 876, and 878 not found in the Chronicle.</p>
+<strong>The significance:</strong>
+<p>As Stenton observed, if Æthelweard "made no attempt at independent investigation" and simply copied meticulously from his source texts (which the evidence suggests), then this southwestern material must derive from a written source. The most plausible explanation: Æthelweard accessed P independently—or had a Chronicle copy interpolated with P material.</p>
+<h3>The Historical Context</h3>
+<p>Creating a southwestern-focused compilation in or shortly after 878 makes historical sense:</p>
+<strong>Alfred's crisis:</strong>
+<ul>
+<li>The southwestern West Saxon nobility had largely abandoned him during the winter crisis</li>
+<li>He needed to rebuild relationships and legitimize his authority</li>
+<li>Edington and Wedmore provided the occasion</li>
+</ul>
+<strong>A commemorative text:</strong>
+<ul>
+<li>Emphasizing southwestern locations and nobles</li>
+<li>Tracing royal genealogy and divine favor</li>
+<li>Celebrating victory and peace</li>
+<li>Distributed among the southwestern nobility</li>
+</ul>
+<strong>Purpose:</strong>
+<p>Not yet a "Chronicle" in the later sense, but rather a legitimation document for a specific political purpose in a specific region at a specific moment.</p>
+<h3>Assessment</h3>
+<p>The case for P rests on:</p>
+<ul>
+<li>Multiple independent lines of evidence</li>
+<li>All converging at 789-878</li>
+<li>External corroboration (Æthelweard)</li>
+<li>Historical plausibility</li>
+<li>Explains otherwise anomalous features</li>
+</ul>
+<strong>Source P likely existed as a distinct compilation, created c. 878 in southwestern Wessex, perhaps commemorating Alfred's victory at Edington, or used as a motivational text to rouse the ealdormen to Alfred's side against Guthrum.</strong>
+<p>---</p>
+<h2>III. Source Q (449-890)</h2>
+<p>If Source P (789-878) was incorporated into the Common Stock, where did the remaining Chronicle material come from? The non-P annals show systematically different characteristics: pan-Anglo-Saxon scope instead of southwestern focus, <em>forðferan</em> instead of <em>gefaran</em>, terse style instead of detailed narrative.</p>
+<p>These differences suggest a second major source. The <em>Annals of St Neots</em> provides strong external evidence this source existed independently.</p>
+<p>Having extracted P-type annals from the Chronicle, what material remains?</p>
+<strong>A different kind of text emerges:</strong>
+<h3>Systematic Differences from P</h3>
+
+<p>When we extract P-type entries from the Chronicle, a fundamentally different kind of text emerges. Q-type entries show systematic differences across multiple dimensions that point to separate authorship and distinct purpose.</p>
+
+<p><strong>Lexically,</strong> Q uses <em>forðferan</em> for "die"—never <em>gefaran</em>. This vocabulary shift extends throughout the text, marking a consistent pattern that distinguishes Q material from P material wherever they appear in the Chronicle.</p>
+
+<p><strong>Geographically,</strong> Q takes a pan-Anglo-Saxon scope. Rather than P's tight southwestern focus, Q covers all kingdoms: Wessex, Mercia, Northumbria, East Anglia, and Kent. Events in Canterbury receive the same attention as events in Winchester. Mercian royal succession matters as much as West Saxon. This is a text interested in the fate of all Anglo-Saxon peoples, not just the southwestern West Saxons.</p>
+
+<p><strong>Stylistically,</strong> Q favors short, terse, formulaic entries. Where P gives detailed battle narratives with specific geography and participant names, Q typically offers a single line: a king died, a bishop was consecrated, a battle was fought. The entries use formulaic structures suitable for memorization and rote learning. This is economical prose designed for teaching and transmission.</p>
+
+<p><strong>In content,</strong> Q deals with matters of great import to all Anglo-Saxons: kings, archbishops, popes, major battles, and the conversion histories of kingdoms. Q traces the establishment of ecclesiastical institutions across England. It balances secular and ecclesiastical events. Where P celebrates southwestern nobles and Alfred's destiny, Q documents the foundational events of Anglo-Saxon Christian society.</p>
+
+<p><strong>Summary of Q characteristics:</strong></p>
+<ul>
+<li><strong>Lexical:</strong> <em>forðferan</em> (not <em>gefaran</em>)</li>
+<li><strong>Geographic:</strong> Pan-Anglo-Saxon (not regional)</li>
+<li><strong>Stylistic:</strong> Terse, formulaic (not narrative)</li>
+<li><strong>Content:</strong> Matters of great import to all (not battle details)</li>
+</ul>
+
+<p>These are not variations in P's style—they're systematically different choices that suggest a different author writing for a different audience with a different purpose.</p>
+<h3>Seeing the Difference: Q-Type Entries</h3>
+<strong>Example 1 (Annal 804):</strong>
+<p>Old English:</p>
+<blockquote><em>Her wæs gehadod Beornmod biscep to Hrofesceastre.</em></blockquote>
+<p>Translation:</p>
+<blockquote>"In this year Beornmod was consecrated bishop of Rochester."</blockquote>
+<strong>Q characteristics:</strong>
+<ul>
+<li>Terse, single fact</li>
+<li>Ecclesiastical matter of import</li>
+<li>Pan-Anglo-Saxon (Rochester in Kent)</li>
+<li>No regional bias</li>
+<li>Formulaic structure</li>
+</ul>
+<strong>Example 2 (Annal 805):</strong>
+<p>Old English:</p>
+<blockquote><em>Her Æthelheard ærcebiscep forþferde, 7 Wulfred wæs to ærcebiscepe gehadod; 7 Forþred abbud forþferde.</em></blockquote>
+<p>Translation:</p>
+<blockquote>"In this year Archbishop Æthelheard died [<em>forþferde</em>], and Wulfred was consecrated archbishop; and Abbot Forthred died [<em>forþferde</em>]."</blockquote>
+<strong>Q characteristics:</strong>
+<ul>
+<li><strong><em>forðferan</em></strong> vocabulary (twice)</li>
+<li>Multiple facts, all terse</li>
+<li>Ecclesiastical succession</li>
+<li>Matter of great import to all Anglo-Saxons</li>
+<li>No southwestern elements, no battle details</li>
+</ul>
+<strong>Example 3 (Annal 821):</strong>
+<p>Old English:</p>
+<blockquote><em>Her Cenwulf Miercna cyning forþferde, 7 Ceolwulf feng to rice; 7 Eadbryht aldormon forþferde.</em></blockquote>
+<p>Translation:</p>
+<blockquote>"In this year Cenwulf, king of the Mercians, died [<em>forþferde</em>], and Ceolwulf succeeded to the kingdom; and Ealdorman Eadbryht died [<em>forþferde</em>]."</blockquote>
+<strong>Q characteristics:</strong>
+<ul>
+<li><strong><em>forðferan</em></strong> vocabulary (twice)</li>
+<li>Royal succession in Mercia (pan-Anglo-Saxon scope)</li>
+<li>Terse reporting of secular matters of import</li>
+<li>No regional focus, no battle narrative</li>
+</ul>
+<strong>Example 4 (Annal 814):</strong>
+<p>Old English:</p>
+<blockquote><em>Her Carl cyning forþferde 7 he ricsode .xlv. wintra.</em></blockquote>
+<p>Translation:</p>
+<blockquote>"In this year King Charles [Charlemagne] died [<em>forþferde</em>], and he had reigned 45 years."</blockquote>
+<strong>Q characteristics:</strong>
+<ul>
+<li><strong><em>forðferan</em></strong> vocabulary</li>
+<li>Continental matter of great import to all Anglo-Saxons</li>
+<li>Terse, formulaic</li>
+<li>Demonstrates Q's pan-Germanic scope beyond Britain</li>
+</ul>
+<p>These are fundamentally different from P's longer, detailed, southwestern-focused battle narratives.</p>
+<h3>The Character of Q</h3>
+<strong>Consistent with educational use:</strong>
+<ul>
+<li>Alfred's educational program in the 880s/early 890s required texts</li>
+<li>Q's pan-Anglo-Saxon scope and accessible style fit this context</li>
+<li>A general history of the Anglo-Saxons, presented in memorable formulaic entries</li>
+<li>Covering great events of church and state</li>
+<li>Suitable for learning and transmission</li>
+</ul>
+<strong>Sources Q likely drew upon:</strong>
+<ul>
+<li>Bede's Epitome</li>
+<li>Regnal lists</li>
+<li>Easter tables (possibly)</li>
+<li>P itself (for some entries, adapting them to Q's terse style)</li>
+</ul>
+<h3>Evidence from the Annals of St Neots</h3>
+<p>The <em>Annals of St Neots</em> is a 12th-century Latin text that shares substantial Chronicle-related material. It provides crucial evidence that Q circulated independently.</p>
+<strong>St Neots before 851:</strong>
+<p>The text shares Chronicle-related material from annal 455 onward, but shows remarkable differences from the Chronicle manuscripts:</p>
+<strong>What St Neots has:</strong>
+<ul>
+<li>Earlier, more accurate Old English name forms (<em>Koenuualch</em> instead of <em>Cenwalh</em>, <em>Oisc</em> instead of <em>Æsc</em>)</li>
+<li>Complete freedom from the 756-845 chronological dislocation affecting all Chronicle manuscripts derived from Æ</li>
+<li>Chronicle-related entries from 455-850</li>
+</ul>
+<strong>What St Neots lacks:</strong>
+<ul>
+<li>No southwestern geographical elements whatsoever before 851</li>
+<li>No <em>gefaran</em>-type entries</li>
+<li>No P-type material</li>
+</ul>
+<strong>St Neots from 851 onward:</strong>
+<p>At annal 851, St Neots switches to using Asser's <em>Life of Alfred</em> as its source. From this point forward:</p>
+<ul>
+<li>Southwestern elements suddenly appear (because St Neots now draws on Asser's text, which contains southwestern material)</li>
+<li>The character changes to match Asser's text</li>
+</ul>
+<strong>The Interpretation:</strong>
+<p>St Neots accessed <strong>Q directly</strong> for material before 851. Q was:</p>
+<ul>
+<li>Free from the chronological dislocation (explaining St Neots' accurate chronology for 756-845)</li>
+<li>Earlier in textual history (explaining more accurate name forms)</li>
+<li>Without southwestern elements (explaining their absence in St Neots before 851)</li>
+<li>Distinct from P (explaining lack of <em>gefaran</em>-type entries)</li>
+</ul>
+<p>Q's freedom from chronological dislocation (as evidenced by St Neots) will become crucial to understanding the 851 correction.</p>
+<strong>The meticulous copying:</strong>
+<p>W.H. Stevenson acknowledged that the St Neots compiler "adhered very closely to his MS., apart from the alterations necessitated by the plan of his work." This makes deliberate omission of all southwestern elements before 851 implausible. St Neots simply didn't have them—because Q didn't contain them.</p>
+<h3>The Relationship Between P and Q</h3>
+<strong>Not mutually exclusive:</strong>
+<p>Some annals show characteristics of both P and Q, suggesting:</p>
+<ul>
+<li>The Common Stock compiler drew on both for some annals</li>
+<li>Or, Q may have drawn on antecedent P for certain entries, adapting them to Q's style</li>
+<li>Overlap and seams, not clean separation</li>
+</ul>
+<strong>Example - Annal 789:</strong>
+<ul>
+<li>Chronicle has southwestern detail (P characteristic)</li>
+<li>St Neots has same annal but heavily abbreviated, no southwestern details (Q characteristic)</li>
+<li>Suggests: P had full account; Q used abbreviated version; Chronicle drew on both</li>
+</ul>
+<h3>Assessment</h3>
+<p>The case for Q rests on:</p>
+<ul>
+<li>Systematically different from P in vocabulary, style, scope, purpose</li>
+<li>St Neots evidence compelling—shows Q circulation before Chronicle compilation</li>
+<li>St Neots' freedom from 756-845 dislocation indicates access to Q (which lacked this error)</li>
+<li>Historical context (Alfred's educational program) provides plausible origin</li>
+<li>Explains otherwise puzzling features of St Neots</li>
+</ul>
+<strong>Source Q likely existed as a general Anglo-Saxon history, compiled in the 880s/early 890s as part of Alfred's educational and spiritual renewal program, circulating independently before incorporation into the Common Stock.</strong>
+<p>---</p>
+<h2>IV. What's Left After P and Q</h2>
+<p>Having extracted P and Q from the Chronicle, what remains?</p>
+<strong>Three types of material:</strong>
+<p>1. <strong>World History entries</strong> (to the second century) - likely from Bede and other sources</p>
+<p>2. <strong>Fulham army annals</strong> (879-892) - tracking one specific Viking force</p>
+<p>3. <strong>Final wars annals</strong> (891-895) - Alfred's last campaigns</p>
+<p>For the World History material, the sources are generally understood (Bede's Epitome, etc.). But the 879-892 and 891-895 sections deserve closer attention.</p>
+<strong>The evidence for separate sources here is less immediately obvious than for P and Q.</strong> We don't have the same convergence of multiple independent scholarly observations. The lexical markers are less clear. The clustering is less dramatic.
+<strong>However:</strong>
+<p>Given the evidence for P and Q as antecedent sources, it becomes reasonable to ask: might there have been other sources circulating as well?</p>
+<p>More importantly: <strong>the Latin sources create problems that these hypothetical sources may resolve.</strong></p>
+<p>This is where the multiple-source framework shows its real power—not just explaining internal Chronicle features, but resolving longstanding puzzles about external witnesses.</p>
+<p>---</p>
+<h2>V. Sources R, S, T</h2>
+<h3>Source R (879-892): The Fulham Army Intelligence</h3>
+<strong>The Chronicle Material:</strong>
+<p>Annals 879-892 have a distinctive focus: they track one specific Viking army—the force that wintered at Fulham in 879.</p>
+<strong>Unusual characteristics:</strong>
+<ul>
+<li>Follows this army after it leaves England for the Continent</li>
+<li>Monitors Continental movements in detail</li>
+<li>Continues tracking for over a decade</li>
+<li>Other Viking forces active in this period receive less attention</li>
+</ul>
+<strong>The scholarly observations:</strong>
+<strong>Peter Sawyer noted:</strong> News of a Viking army's Continental movements would only interest an Anglo-Saxon audience if that army later became relevant—which this force did when it invaded England in 892.
+<strong>R.H.C. Davis observed:</strong> These entries read like military "Intelligence Reports"—practical, focused information about enemy movements.
+<strong>Example of R-type tracking (Annal 882):</strong>
+<p>Old English:</p>
+<blockquote><em>Her for se here up onlong Mæse feor on Fronclond 7 þær sæt an gear.</em></blockquote>
+<p>Translation:</p>
+<blockquote>"In this year the army went up along the Meuse far into Frankish territory and stayed there for a year."</blockquote>
+<strong>R characteristics:</strong>
+<ul>
+<li>Tracks the Fulham army on the Continent (not in England)</li>
+<li>Precise geographical detail (Meuse river)</li>
+<li>No direct relevance to English affairs at this moment</li>
+<li>Intelligence-gathering quality—monitoring enemy positions</li>
+</ul>
+<p>This Continental focus is unprecedented in earlier Chronicle entries and suggests specialized military intelligence compilation.</p>
+<strong>The hypothesis:</strong>
+<p>These annals may derive from a separate compilation (<strong>Source R</strong>) created around 892 when this army's return made tracking its movements politically and militarily urgent.</p>
+<strong>Evidence for independent circulation:</strong>
+<strong>Æthelweard's <em>Chronicon</em> contains material from this period not found in any Chronicle manuscript.</strong>
+<strong>The most striking example—Annal 885:</strong>
+<p>All Chronicle manuscripts show signs of homoeoteleuton (a scribal copying error where the scribe's eye skips from one phrase to a similar phrase below, omitting the text in between).</p>
+<p>The Chronicle reads:</p>
+<blockquote>"Some of them sought places beyond the sea...[APPARENT GAP]...And in the same year King Alfred sent a naval force from Kent into East Anglia."</blockquote>
+<p>Æthelweard's text has a full passage between these points, describing the Viking army's movements.</p>
+<strong>The problem:</strong>
+<p>If Æthelweard and the Chronicle both derived from the same archetype (Æ), and that archetype had already lost this passage through homoeoteleuton, how does Æthelweard have it?</p>
+<strong>The solution this framework offers:</strong>
+<p>Æthelweard accessed R independently (or had a Chronicle copy interpolated with R material before the scribal error). The passage concerns the Fulham army's movements—precisely R's subject matter.</p>
+<p>Dorothy Whitelock called this evidence "extremely important." Frank Stenton first identified the issue in 1925.</p>
+<strong>Assessment:</strong>
+<p>The case for R rests on:</p>
+<ul>
+<li>Focused subject matter suggests separate compilation</li>
+<li>Æthelweard's 885 passage provides evidence for independent circulation</li>
+<li>Historical context (892 invasion) provides plausible occasion for creation</li>
+<li>But we lack the convergence of multiple independent observations that P and Q have</li>
+</ul>
+<p>---</p>
+<h3>Source S (851-890): A Working Compilation</h3>
+<strong>The nature of S:</strong>
+<p>S is not a newly-composed text but a working compilation—material from P, Q, and R assembled into a single document, possibly created to aid Asser in writing his <em>Life of Alfred</em> around 893.</p>
+<strong>Why hypothesize S?</strong>
+<strong>Problem 1: The September Indiction</strong>
+<p>From annal 851 onward, the Chronicle suddenly begins reckoning the new year from September rather than December/January.</p>
+<ul>
+<li>By the mid-ninth century, the September Indiction had long disappeared from Anglo-Saxon usage</li>
+<li>Kenneth Harrison suggested this might represent an "antiquarian revival"</li>
+<li>But why would it appear suddenly at precisely 851?</li>
+</ul>
+<strong>Problem 2: The 851 chronological correction</strong>
+<p>As noted earlier, the Chronicle suffers a major chronological dislocation affecting annals 756-845. At annal 851, the chronology suddenly corrects.</p>
+<ul>
+<li>Janet Bately observed there's no obvious reason for correction at 851</li>
+<li>Unless unaffected material was joined to the preceding section</li>
+</ul>
+<strong>Problem 3: Manuscript relationships</strong>
+<p>In annals 851-887, manuscripts BCDE agree with Asser's <em>Life</em> against manuscript A in several readings.</p>
+<ul>
+<li>MS A is the earliest vernacular manuscript (late 9th/early 10th century)</li>
+<li>Why would later manuscripts agree with Asser against the earlier manuscript?</li>
+</ul>
+<strong>The S hypothesis addresses all three:</strong>
+<strong>A possible scenario:</strong>
+<p>Around 893, a working compilation may have been created combining relevant entries from P, Q, and R for the period 851-890. This compilation may have been created for Asser's use in writing his <em>Life</em>. The September Indiction may have been imposed at this stage. S begins at 851, drawing on Q which was free from chronological dislocation. When later incorporated into the Common Stock, S joined material ending at 845—hence the chronological correction at 851. This manuscript relationship is technical, but important: it suggests S circulated after the Common Stock was initially compiled, allowing later scribes to make corrections.</p>
+<strong>Why BCDE agree with Asser:</strong>
+<ul>
+<li>MS A may reflect an earlier version of the Common Stock</li>
+<li>A later scribe in the shared textual history of BCDE could have "corrected" the text using a copy of S</li>
+<li>This brought BCDE into closer agreement with Asser's <em>Life</em></li>
+</ul>
+<strong>Assessment:</strong>
+<p>The case for S:</p>
+<ul>
+<li>Explains multiple otherwise puzzling features (September Indiction, 851 chronological correction, manuscript relationships)</li>
+<li>The logic is compelling</li>
+<li>But it's more inferential—we're proposing a working document created for a specific purpose</li>
+<li>Less direct evidence than for P and Q</li>
+</ul>
+<p>---</p>
+<h3>Source T (891-895): Alfred's Final Wars</h3>
+<strong>The Chronicle material:</strong>
+<p>ASC 891-896 provides an account of Alfred's final major campaigns against the Vikings. It's long, complex, and detailed.</p>
+<strong>The St Neots version:</strong>
+<p>St Neots 891-895 covers the same period but is:</p>
+<ul>
+<li>Much shorter</li>
+<li>More concise</li>
+<li>Better structured</li>
+<li>Lacking many details present in the Chronicle</li>
+</ul>
+<strong>Scholarly analysis</strong> (detailed in the full thesis) has identified unique and unusual features in ASC 892-896 that don't appear in St Neots' version.
+<strong>The hypothesis:</strong>
+<p>St Neots may preserve a version closer to an original, concise account (<strong>Source T</strong>). The Chronicle represents a later, expanded revision with additional material and complexity.</p>
+<strong>Additional evidence:</strong>
+<strong>John of Worcester's <em>Chronicon ex chronicis</em> shares readings with St Neots in annal 892:</strong>
+<p>Cyril Hart identified common features:</p>
+<ul>
+<li>Both use <em>paganorum exercitus</em> for Old English <em>here</em></li>
+<li>Both introduce the word <em>Franc(orum)</em></li>
+<li>Both give <em>Bonon(n)iam</em> for <em>Bunnan</em></li>
+<li>Both omit translating <em>west weard</em></li>
+</ul>
+<p>Hart proposed St Neots may have been available to John of Worcester. Alternatively, both Latin texts may have been translating a shared Old English source distinct from the Chronicle—possibly T.</p>
+<strong>The relationship to Q:</strong>
+<p>T may have been:</p>
+<ul>
+<li>Added as a continuation to Q (which ended at 890), or</li>
+<li>Circulated together with Q as a companion text</li>
+</ul>
+<p>Either way, St Neots' access to both Q and T (but not the full Common Stock) would explain its distinctive characteristics.</p>
+<strong>Assessment:</strong>
+<p>The case for T:</p>
+<ul>
+<li>St Neots' version is notably different (shorter, better structured)</li>
+<li>Some evidence of shared readings with John of Worcester</li>
+<li>Plausible as a campaign record created c. 895</li>
+<li>But less convergent evidence than P and Q</li>
+</ul>
+<p>---</p>
+<h3>What These Hypotheses Accomplish</h3>
+<strong>For P and Q:</strong> Multiple independent lines of evidence converge, strongly suggesting they existed as independent sources.
+<strong>For R, S, and T:</strong> The evidence is more limited. But these hypotheses accomplish something important:
+<strong>They provide elegant solutions to problems that have plagued Chronicle scholarship for decades:</strong>
+<ul>
+<li>Æthelweard's 885 passage (R explains it)</li>
+<li>St Neots' lack of southwestern elements before 851 (Q explains it)</li>
+<li>The September Indiction at 851 (S explains it)</li>
+<li>The chronological correction at 851 (S drawing on Q explains it)</li>
+<li>BCDE's agreement with Asser against A (later correction using S explains it)</li>
+<li>St Neots' simpler 891-895 account (T explains it)</li>
+</ul>
+<strong>One framework—multiple antecedent sources woven together—replaces what previously required multiple auxiliary hypotheses (corrupted copies, variant versions, scribal errors, inexplicable anomalies).</strong>
+<p>Even if R, S, and T remain more speculative than P and Q, the overall framework provides a more parsimonious explanation than the traditional single-archetype model when we account for ALL the evidence—internal Chronicle features AND external witness variations.</p>
+<p>---</p>
+<h2>VI. The Big Question: When Was Æ Compiled?</h2>
+<p>If the Common Stock (Æ) was compiled from multiple antecedent sources, when did this compilation occur?</p>
+<strong>The traditional answer: early 890s (before 893)</strong>
+<strong>The reasoning:</strong>
+<ul>
+<li>Asser wrote his <em>Life of Alfred</em> in 893</li>
+<li>Asser used the Chronicle</li>
+<li>Therefore Æ must have existed by 893</li>
+<li>This has served as the terminus ante quem for over 120 years</li>
+</ul>
+<strong>But this reasoning depends on Asser using Æ.</strong>
+<strong>What if Asser used S?</strong>
+<p>If the S hypothesis is correct—that is, if a working compilation was created around 893 for Asser's use (combining material from P, Q, and R)—then:</p>
+<ul>
+<li>Asser didn't use the Common Stock</li>
+<li>The Common Stock didn't exist yet in 893</li>
+<li>The 893 terminus ante quem collapses</li>
+</ul>
+<strong>When could Æ have been compiled?</strong>
+<strong>Cannot be earlier than the sources it incorporates:</strong>
+<p>If T was created around 895 (following Alfred's final victories and Hæsten's departure), then the Common Stock cannot have been compiled before 895/896 at the earliest.</p>
+<strong>Most likely: c. 900-902</strong>
+<strong>The evidence:</strong>
+<ul>
+<li>MS A (the earliest vernacular Chronicle manuscript) dates to late 9th/early 10th century</li>
+<li>If Æ = MS A (see below), compilation around 900-902 fits the manuscript date</li>
+<li>This places compilation in the early years of Edward the Elder's reign</li>
+</ul>
+<strong>This is a significant shift:</strong>
+<p>From: <strong>Alfredian project in the early 890s</strong></p>
+<p>To: <strong>Edwardian project around 900-902</strong></p>
+<p>The political context changes dramatically.</p>
+<p>---</p>
+<h2>VII. The Edward Hypothesis</h2>
+<p>If the Common Stock was compiled around 900-902, it becomes an Edwardian project, not an Alfredian one. This will become important when we consider the Chronicle's political purposes.</p>
+<strong>This makes historical sense.</strong>
+<h3>Edward's Political Situation</h3>
+
+<p>In 899, Alfred died and Edward succeeded to the throne. But Edward's succession was immediately contested by his cousin Æthelwold, son of King Æthelred—Alfred's older brother who had died in 871. This created a succession crisis that threatened to tear Wessex apart.</p>
+
+<p>Æthelwold's claim had real force. As the son of an elder brother, he could argue for a stronger hereditary claim than Edward, Alfred's son. The Chronicle itself records Æthelwold's rebellion in its annals for 901-902, showing this was no minor disturbance. Edward faced his cousin's immediate and dangerous challenge: Æthelwold seized royal estates at Wimborne and Christchurch, refused to submit to Edward's authority, fled to Northumbria where he rallied support, and then returned with a Viking army. This was a major military threat that could have ended Edward's reign before it truly began.</p>
+
+<p><strong>Edward needed legitimation urgently.</strong> And the Chronicle's content directly addresses those needs.</p>
+<h3>What the Chronicle Provides</h3>
+
+<p>The Chronicle's content addresses Edward's needs with remarkable precision. Its extensive genealogies trace royal descent and emphasize proper succession—establishing Edward's lineage from Cerdic through Alfred. The Cynewulf and Cyneheard material in annals 755-757 deals explicitly with the question of legitimate versus illegitimate succession, providing a historical precedent for Edward's situation. The Chronicle's narratives justify territorial expansion into areas never previously held by Wessex—precisely what Edward would need for the conquests he was planning. And throughout, Alfred is portrayed as divinely chosen, his victories at Edington and beyond presented as God's favor. As Alfred's legitimate heir, Edward inherits this divine sanction.</p>
+
+<p>Thomas Bredehoft observed the Chronicle's "abiding concern with West Saxon political legitimacy and the West Saxon succession." He attributed this to "anxiety about the West Saxon succession during Alfred's time." But Bredehoft was working from the assumption that the Common Stock was compiled in the early 890s. If instead the Common Stock was compiled around 900-902, during Edward's contested succession, this "abiding concern with legitimacy" fits Edward's needs even more precisely than Alfred's.</p>
+<h3>Alfred vs. Edward: Who Needed It More?</h3>
+
+<p>Consider the contrast. By the late 890s, Alfred was secure on his throne. Edington lay two decades in the past, his final victories over the Vikings in 895 had consolidated Wessex, and there was no succession crisis—Edward was the designated heir, acknowledged and prepared. Alfred's relationship with the nobility had been rebuilt through years of cooperation and military success. Whatever legitimation needs Alfred may have had in 878 or the early 880s, by the late 890s he faced no pressing crisis requiring propaganda.</p>
+
+<p>Edward's situation in 900-902 was fundamentally different. His succession was actively contested by a cousin with an arguably stronger hereditary claim. He faced immediate rebellion and military threat. He needed to justify his rule over Æthelwold to nobles who might question the succession. He needed to legitimize territorial expansion into areas his father had never conquered. He needed propaganda establishing his legitimacy, and he needed it urgently.</p>
+
+<p>The Chronicle's content addresses Edward's needs.</p>
+<h3>A Possible Scenario</h3>
+
+<p>Imagine the situation around 900-902. Edward has just succeeded his father, but Æthelwold challenges his legitimacy and raises military forces. Edward needs to establish his authority quickly and decisively. He needs a text that traces his lineage, justifies his succession, and provides historical precedent for his rule.</p>
+
+<p>The raw materials were available. Sources P, Q, R, S, and T had been created during Alfred's reign for various purposes—commemorative, educational, military, biographical. These specialized texts circulated independently, serving their original purposes. But they could be woven together into something new: a comprehensive historical narrative establishing West Saxon royal legitimacy and, specifically, Edward's rightful succession as Alfred's heir.</p>
+
+<p>Genealogies could be added or emphasized. Material from P celebrating Alfred's victories could be incorporated. Material from Q providing pan-Anglo-Saxon historical context could frame the narrative. The result would be a text that served Edward's immediate political needs—distributed to major centers across his realm, establishing his legitimacy as the rightful king.</p>
+
+<p><strong>Who might have overseen this project?</strong> Asser, Bishop of Sherborne from the 890s until his death around 909, is a compelling candidate. He had already overseen the creation of S around 893 for his <em>Life of Alfred</em>. He was intimately familiar with the source materials—P, Q, R, and the biographical traditions surrounding Alfred. He was institutionally positioned to undertake such a project, and the 900-902 timeframe falls squarely within his episcopate. If anyone had both the knowledge and the authority to compile the Common Stock, it was Asser.</p>
+
+<p><strong>This remains speculative.</strong> The evidence is circumstantial rather than direct—we have no documentary proof of when or by whom the Common Stock was compiled. But it's a scenario consistent with the available evidence, and it makes sense of features that have long puzzled scholars.</p>
+<p>---</p>
+<h2>VIII. Questions for Future Research</h2>
+<h3>Is MS A actually Æ?</h3>
+<strong>The traditional view:</strong>
+<ul>
+<li>Æ is a lost archetype</li>
+<li>MS A descends from Æ but is not Æ itself</li>
+<li>Plummer posited Æ to explain features in the Latin sources</li>
+</ul>
+<strong>This framework suggests:</strong>
+<ul>
+<li>Æ may not be a lost archetype but MS A itself</li>
+<li>The Latin sources accessed different source combinations (P, Q, R, S, T)</li>
+<li>No need to posit a lost archetype to explain their variations</li>
+</ul>
+<strong>Evidence supporting MS A = Æ:</strong>
+<ul>
+<li>MS A dates to late 9th/early 10th century (consistent with c. 900-902 compilation)</li>
+<li>MS A is the earliest vernacular Chronicle manuscript</li>
+<li>The main evidence against this identification was the 893 terminus ante quem</li>
+<li>If that terminus collapses (Asser used S, not Æ), the objection disappears</li>
+</ul>
+<strong>Evidence requiring explanation:</strong>
+<ul>
+<li>Some readings in BCDE suggest access to material MS A lacks</li>
+<li>But this could be explained by later scribal corrections using S or other sources</li>
+</ul>
+<strong>This deserves further investigation.</strong>
+<h3>What other questions does this framework open?</h3>
+<strong>Textual:</strong>
+<ul>
+<li>Can we identify more precisely where sources overlap vs. provide unique material?</li>
+<li>Are there other compositional seams we haven't yet identified?</li>
+<li>What can detailed linguistic analysis reveal about authorship of individual sources?</li>
+<li>Can we trace manuscript relationships more clearly with this framework?</li>
+</ul>
+<strong>Historical:</strong>
+<ul>
+<li>If the Common Stock is Edwardian, how does this reshape our understanding of Edward's reign?</li>
+<li>What other texts circulated during Alfred's reign that we've assumed came later?</li>
+<li>How were P, Q, R, S, T actually used before compilation?</li>
+<li>What does this tell us about literacy, education, and political communication in late 9th-century Wessex?</li>
+</ul>
+<strong>Comparative:</strong>
+<ul>
+<li>How does this model apply to the later Chronicle continuations?</li>
+<li>What does this tell us about Æthelflæd's annals and their relationship to the Common Stock?</li>
+<li>Can we apply similar source-critical methods to other "unified" medieval texts?</li>
+<li>How do other annalistic traditions (Frankish, Irish) handle source compilation?</li>
+</ul>
+<strong>Political:</strong>
+<ul>
+<li>How does Edward's need for legitimation compare to other contested successions?</li>
+<li>What role did Chronicle copies play in Edward's political strategy?</li>
+<li>How did different centers receive and use Chronicle texts?</li>
+<li>What does this tell us about the relationship between royal power and historical narrative?</li>
+</ul>
+<h3>An Invitation</h3>
+<p>This framework doesn't close questions—it opens them.</p>
+<p>The evidence for multiple antecedent sources (especially P and Q) converges in compelling ways. The implications cascade through Anglo-Saxon historiography. But much work remains to test, refine, and extend these hypotheses.</p>
+<p>The most important question may be the simplest: <strong>What else becomes visible when we stop assuming a single archetype and start looking for compositional complexity?</strong></p>
+<p>The evidence has been there all along. It required only a different angle of vision.</p>
+
+<div class="example-box" style="background: var(--parchment-dark); border: 2px solid var(--burgundy); margin: 2rem 0;">
+<h4 style="color: var(--burgundy); margin-top: 0;">Key Takeaways: Evidence Quality</h4>
+<p><strong>Sources P and Q:</strong> Strong convergent evidence from multiple independent scholars using different methodologies. Lexical, geographical, formulaic, and external witness evidence all converge. High confidence these sources existed.</p>
+<p><strong>Sources R, S, and T:</strong> More speculative, with less convergent evidence. However, they provide elegant solutions to longstanding problems: Æthelweard's 885 passage, the September Indiction at 851, the chronological correction at 851, St Neots' characteristics, and manuscript relationships.</p>
+<p><strong>Edward Hypothesis:</strong> Possible implication if dating shifts to c. 900-902. Circumstantial evidence based on Edward's political needs and manuscript dating. Speculative but historically plausible.</p>
+<p style="margin-bottom: 0;"><strong>MS A = Æ:</strong> Question for future research. If Asser used S rather than Æ, the main objection (893 terminus ante quem) disappears.</p>
+</div>
+
+<p>---</p>
+<strong>[Download the Full Thesis →]</strong>
+<strong>[Explore the Detailed Evidence →]</strong>
+<strong>[See the Implications →]</strong>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>The Anglo-Saxon Chronicle: Multiple-Source Hypothesis | John Quanrud, PhD</p>
+        </div>
+    </footer>
+</body>
+</html>

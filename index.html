@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building on Plummer's Foundation | The Anglo-Saxon Chronicle Multiple-Source Hypothesis</title>
+    <meta name="description" content="A theory of multiple antecedent sources behind the Anglo-Saxon Chronicle Common Stock, reshaping our understanding of Chronicle origins and compilation.">
+    <meta name="keywords" content="Anglo-Saxon Chronicle, ASC, Plummer, Common Stock, manuscript studies, medieval history, Alfred the Great, Edward the Elder">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --parchment: #faf8f3;
+            --parchment-dark: #f0ebe3;
+            --ink: #2c2416;
+            --ink-light: #5a4e3d;
+            --burgundy: #8b2e2e;
+            --burgundy-light: #a85050;
+            --gold: #b8964f;
+            --border: #d9d0c1;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 19px;
+            line-height: 1.7;
+            color: var(--ink);
+            background: var(--parchment);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Navigation */
+        nav {
+            background: var(--ink);
+            color: var(--parchment);
+            padding: 1.25rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        nav .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav .site-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: var(--parchment);
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        
+        nav a:hover {
+            color: var(--gold);
+        }
+        
+        nav a.active {
+            color: var(--gold);
+            font-weight: 700;
+        }
+        
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-light) 100%);
+            color: var(--parchment);
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Content */
+        main {
+            padding: 2rem 0 4rem;
+        }
+        
+        h2 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: var(--burgundy);
+            margin: 2.5rem 0 1rem;
+            line-height: 1.3;
+        }
+        
+        p {
+            margin-bottom: 1.3rem;
+        }
+        
+        em {
+            font-style: italic;
+        }
+        
+        strong {
+            font-weight: 700;
+        }
+        
+        ul {
+            margin: 1.5rem 0 1.5rem 2rem;
+            line-height: 1.8;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .source-box {
+            background: var(--parchment-dark);
+            border-left: 4px solid var(--burgundy);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .source-box p {
+            margin-bottom: 0;
+        }
+        
+        .cta {
+            display: inline-block;
+            background: var(--burgundy);
+            color: var(--parchment);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.2s;
+            margin: 2rem 0;
+        }
+        
+        .cta:hover {
+            background: var(--burgundy-light);
+        }
+        
+        footer {
+            background: var(--ink);
+            color: var(--parchment);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="site-title">The Anglo-Saxon Chronicle</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="framework.html">Framework</a></li>
+                <li><a href="thesis.html">Thesis</a></li>
+                <li><a href="assessment.html">Assessment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Building on Plummer's Foundation</h1>
+            <p class="subtitle">The Anglo-Saxon Chronicle: A Theory of Multiple Antecedent Sources</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <h2>Charles Plummer Changed Everything</h2>
+
+            <p>In 1899, Charles Plummer revolutionized Anglo-Saxon Chronicle scholarship. Through meticulous analysis of the surviving manuscripts, he demonstrated that all vernacular versions—known by their sigla A, B, C, D, E, F, and G—share a common core of annals extending from 60 B.C. to some point in the 890s. He called this hypothetical source Æ (capital "ash"), the "Common Stock."</p>
+
+            <p>Plummer's achievement remains the foundation upon which all subsequent Chronicle studies rest. His identification of this shared archetype behind the vernacular manuscripts has never been successfully challenged.</p>
+
+            <h2>The Single-Source Hypothesis</h2>
+
+            <p>But Plummer went further. He proposed that Æ, compiled in the early 890s during Alfred's reign, was not merely the source of the vernacular Chronicles but the ultimate source of all Chronicle-related material in all works, both vernacular and Latin—including Asser's <em>Life of Alfred</em>, Æthelweard's <em>Chronicon</em>, and the <em>Annals of St Neots</em>.</p>
+
+            <p>For over a century, this single-source theory has shaped how scholars approach the Chronicle's origins.</p>
+
+            <h2>Plummer's Achievement Stands</h2>
+
+            <p>His identification of the Common Stock remains valid. His single-source theory successfully explained the shared material across all Chronicle manuscripts.</p>
+
+            <h2>Unexplained Anomalies</h2>
+
+            <p>Yet Plummer's proposed archetype contains features that remain difficult to explain:</p>
+
+            <p>The text shifts abruptly from one calendar system to another at annal 851, moving from December/January reckoning to a September Indiction that had long since disappeared from Anglo-Saxon usage. A major chronological dislocation affecting annals 756-845 suddenly corrects itself at precisely this point.</p>
+
+            <p>Two different terms for "die"—<em>gefaran</em> and <em>forðferan</em>—appear in the text. These terms never appear together in any other Old English work, yet the Chronicle uses both. The vocabulary shifts at annal 878: <em>gefaran</em> appears exclusively in 789-878, while <em>forðferan</em> appears everywhere else.</p>
+
+            <p>Southwestern geographical elements cluster tightly in annals 789-878, then vanish. Distinctive formulaic phrases appear in this same period. The narrative style shifts between terse, formulaic entries and longer, eyewitness-quality accounts.</p>
+
+            <p>If Æ was compiled as a unified text in the early 890s, why does it contain these internal inconsistencies?</p>
+
+            <h2>The Latin Sources Don't Fit</h2>
+
+            <p>The problems deepen when we examine the Latin sources that share Chronicle-related material.</p>
+
+            <p>Æthelweard's <em>Chronicon</em> (late 10th century) contains a passage in annal 885 about the Fulham Viking army that appears to have been lost from Æ (and thus all subsequent Chronicle manuscripts) through scribal error. More remarkably, it includes additional southwestern geographical details found nowhere in the Chronicle—for instance, naming the king's reeve killed in the first Viking raid as Beaduheard and specifying Dorchester, details absent from all Chronicle versions. If Æthelweard and the Chronicle both derived from the same archetype—and that archetype had already lost the 885 passage—how does Æthelweard have it? Where did his unique southwestern material come from?</p>
+
+            <p>The <em>Annals of St Neots</em> (12th century) shares Chronicle material from annal 455 onward, yet shows a different pattern in its early entries. It shows earlier, more accurate Old English name forms than any Chronicle manuscript and completely avoids the 756-845 chronological dislocation that affects every Chronicle version.</p>
+
+            <p>For decades, scholars have proposed solutions based on Plummer's single-source thesis for all Chronicle-related material: corrupted copies, variant versions, lost intermediaries. The fundamental problems remain.</p>
+
+            <h2>The Appeal of Parsimony</h2>
+
+            <p>Plummer's single-source hypothesis has an undeniable advantage: Occam's razor. One archetype is simpler than multiple sources. Why multiply entities unnecessarily?</p>
+
+            <p>For the vernacular Chronicle manuscripts alone, this parsimony holds. A single archetype elegantly explains their shared material and relationships.</p>
+
+            <p>But when we extend the hypothesis to the Latin sources—as Plummer did, and as subsequent scholarship has required—the simplicity breaks down. To preserve the single-source model, we must accept:</p>
+
+            <ul>
+                <li>Æthelweard somehow has material his archetype lost</li>
+                <li>St Neots systematically shows different characteristics from its supposed source</li>
+                <li>The September Indiction appears at 851 for no discernible reason</li>
+                <li>The chronological dislocation corrects itself inexplicably at 851</li>
+                <li>Multiple auxiliary hypotheses (corrupted copies, variant versions, scribal errors)</li>
+            </ul>
+
+            <p>The single source appears simpler. But when applied to the evidence of the related Latin works it creates more problems than it solves.</p>
+
+            <p>A multiple-source hypothesis may seem more complex initially, but it provides a single coherent explanation for phenomena that otherwise require multiple ad hoc solutions.</p>
+
+            <h2>An Unconsidered Possibility</h2>
+
+            <p>What if both sets of problems—the anomalies within Æ and the difficulties with the Latin sources—point to the same explanation?</p>
+
+            <p><strong>Plummer appears not to have considered the possibility that his Common Stock was compiled from multiple antecedent sources, available during Alfred's reign, that circulated independently before being woven together into Æ.</strong></p>
+
+            <p>When we examine the evidence through this lens, patterns emerge that have been hiding in plain sight.</p>
+
+            <h2>Convergent Evidence</h2>
+
+            <p>Over the past century, scholars working independently on different aspects of the Chronicle have identified features that converge in remarkable ways:</p>
+
+            <p><strong>Janet Bately (1978)</strong> demonstrated through lexical analysis that the <em>gefaran</em>/<em>forðferan</em> split is systematic, not random. She suggested a possible compositional break at annal 878.</p>
+
+            <p><strong>Frank Stenton (1925)</strong> precisely dated the southwestern geographical elements to 789-878, not the broader period previously assumed. He noted that Æthelweard's additional southwestern material suggests "a version of the Chronicle different from any which is now extant."</p>
+
+            <p><strong>R.H. Hodgkin (1939)</strong> identified five distinctive formulaic phrases appearing from annal 825 to 878, concentrated in the section dominated by southwestern interests. These entries, he argued, were "all of a piece."</p>
+
+            <p><strong>Peter Sawyer</strong> noted that annals 879-892 track the Fulham Viking army with unusual precision—information that would only become relevant to an Anglo-Saxon audience after this army's return and invasion in 892. <strong>R.H.C. Davis</strong> observed that these entries "read almost like Intelligence Reports...written or compiled...for the military headquarters of the king."</p>
+
+            <p><strong>Kenneth Harrison</strong> noted that the September Indiction appearing suddenly at 851 might represent an "antiquarian revival"—an unexplained shift occurring precisely where other anomalies cluster.</p>
+
+            <p>These scholars worked on different problems using different methods. Yet their findings converge. The <em>gefaran</em>/<em>forðferan</em> split occurs at 878. The southwestern elements end at 878. The distinctive formulas appear from 825-878. The calendar shifts at 851. St Neots shares only certain types of Chronicle material. Æthelweard accesses material the Chronicle manuscripts don't contain.</p>
+
+            <h2>Multiple Sources, One Chronicle</h2>
+
+            <p>This thesis proposes that these patterns reveal the existence of multiple sources—hypothetical constructs supported by convergent evidence—that were woven together to create Æ. In some instances we see compositional seams—clear joints where different texts were joined. In others we see overlap—material that appears in different forms across sources, explaining variations between the Chronicle and external witnesses.</p>
+
+            <p>The hypothesis proposes five distinct antecedent sources, which for convenience I refer to as P, Q, R, S, and T:</p>
+
+            <div class="source-box">
+                <p><strong>Source P (789-878):</strong> A southwestern compilation, possibly commemorating Alfred's victory at Edington. Characterized by <em>gefaran</em> vocabulary, southwestern geographical focus, eyewitness-quality narratives, and distinctive formulaic features. Æthelweard's unique southwestern material suggests he accessed P independently.</p>
+            </div>
+
+            <div class="source-box">
+                <p><strong>Source Q (449-890):</strong> Could have functioned as a general history of the Anglo-Saxons, compiled in the 880s/early 890s. Characterized by <em>forðferan</em> vocabulary, pan-Anglo-Saxon scope, and terse formulaic entries. St Neots' earlier name forms and freedom from chronological dislocation strongly suggest it accessed Q before Q was incorporated into the Common Stock.</p>
+            </div>
+
+            <div class="source-box">
+                <p><strong>Source R (879-892):</strong> Intelligence reports tracking the Fulham Viking army, compiled around 892 when this information became politically relevant. Æthelweard's 885 passage, missing from all Chronicle manuscripts, indicates R circulated independently.</p>
+            </div>
+
+            <div class="source-box">
+                <p><strong>Source S (851-890):</strong> A working compilation of P, Q, and R, possibly created around 893 to aid Asser in writing his <em>Life of Alfred</em>. The September Indiction may have been imposed at this stage.</p>
+            </div>
+
+            <div class="source-box">
+                <p><strong>Source T (891-895):</strong> An account of Alfred's final wars. St Neots appears to preserve a version closer to the original; the Chronicle represents a later, expanded revision.</p>
+            </div>
+
+            <p>These sources likely circulated independently during Alfred's reign before being woven together after 895. Æ may not be a lost archetype but Manuscript A itself, perhaps compiled early in Edward the Elder's reign—potentially an Edwardian legitimation project rather than an Alfredian one.</p>
+
+            <h2>A Coherent Framework</h2>
+
+            <p>When we recognize the Common Stock as a compilation of earlier antecedent sources, the anomalies resolve:</p>
+
+            <ul>
+                <li>The calendar shift at 851 marks where S (with its September Indiction) was incorporated</li>
+                <li>The <em>gefaran</em>/<em>forðferan</em> split distinguishes P from Q</li>
+                <li>The southwestern elements identify P material</li>
+                <li>The chronological dislocation ends at 851 because unaffected material (from S) was joined to the preceding section</li>
+                <li>Æthelweard's unique material reflects his independent access to P and R</li>
+                <li>St Neots' characteristics reflect its use of Q and possibly T rather than the compiled Common Stock</li>
+            </ul>
+
+            <p>One framework explains what previously required multiple auxiliary hypotheses.</p>
+
+            <h2>Implications for Anglo-Saxon Studies</h2>
+
+            <p>Recognizing the Common Stock as a compilation of multiple sources has significant implications:</p>
+
+            <p><strong>Dating and Patronage:</strong> Æ may represent an Edwardian legitimation project from the early 900s rather than an Alfredian compilation of the 890s, fundamentally shifting our understanding of the Chronicle's political context and original purpose.</p>
+
+            <p><strong>Alfred's Educational Programme:</strong> The circulation of specialized sources (P, Q, R) before their consolidation reveals sophisticated information management, showing how literacy and historical documentation were deployed as part of Alfred's programme of renewal.</p>
+
+            <p><strong>Understanding Latin Sources:</strong> The multiple-source model explains variations in Æthelweard and St Neots without requiring multiple "lost" manuscripts or complex theories of textual corruption—they accessed different combinations of the underlying sources.</p>
+
+            <p><strong>Asser's Composition Process:</strong> Rather than using a full Chronicle, Asser may have worked from source S (a working compilation of P, Q, and R prepared for him around 893), changing our understanding of how the <em>Life of Alfred</em> was composed.</p>
+
+            <p><strong>Southwest Wessex in 878:</strong> Source P emerges as a commemorative text from Alfred's crisis year at Athelney, revealing how historical writing responded to moments of existential threat and dynastic legitimation.</p>
+
+            <p><strong>Chronicle Continuations:</strong> Understanding T (891-895) as an earlier version helps explain the subsequent development of Chronicle continuations and the relationship between different manuscript traditions.</p>
+
+            <h2>About This Research</h2>
+
+            <p>This website presents the core framework from my 2014 PhD dissertation completed at the University of Nottingham under the supervision of David Parsons, Jayne Carroll, and Christina Lee. For comprehensive textual analysis and full scholarly apparatus, see the complete thesis.</p>
+
+            <h2>Building Forward</h2>
+
+            <p>We're not replacing Plummer's foundation. His identification of the Common Stock remains valid. We're proposing that this Common Stock was itself compiled from earlier antecedent sources—a possibility the evidence increasingly supports.</p>
+
+            <p>The implications extend through Anglo-Saxon historiography: the traditional 893 dating may need revision, the political context may shift from Alfred's reign to Edward's, and our understanding of how Chronicle-related texts circulated and were used must be reconsidered.</p>
+
+            <p><em>This website presents the core framework and convergent evidence. For comprehensive textual analysis and full scholarly engagement, consult the complete thesis.</em></p>
+
+            <p style="text-align: center;">
+                <a href="framework.html" class="cta">Explore the Detailed Framework →</a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>The Anglo-Saxon Chronicle: Multiple-Source Hypothesis | John Quanrud, PhD</p>
+        </div>
+    </footer>
+</body>
+</html>
